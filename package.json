@@ -1,0 +1,27 @@
+{
+  "name": "taskmanager",
+  "version": "1.0.0",
+  "description": "Simple task manager written on NodeJS + Express + EJS.",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedDiamond69/TaskManager.git"
+  },
+  "author": "Alexey Kosyuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedDiamond69/TaskManager/issues"
+  },
+  "homepage": "https://github.com/RedDiamond69/TaskManager#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "nodemon": "^1.18.10"
+  }
+}
