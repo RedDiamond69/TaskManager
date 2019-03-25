@@ -1,2 +1,2 @@
 # TaskManager
-Simple task manager written on NodeJS + Express + EJS.
+Simple task manager written on NodeJS + Express + PUG and MongoDB.
