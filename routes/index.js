@@ -8,10 +8,22 @@ router.get('/', (req, res) => {
 });
 
 router.get('/add', (req, res) => {
-
+    res.render('partials//addForm');
 });
 
 router.post('/add', (req, res) => {
+
+});
+
+router.get('/completed', (req, res) => {
+
+});
+
+router.get('/inprogress', (req, res) => {
+
+});
+
+router.get('/search', (req, res) => {
 
 });
 

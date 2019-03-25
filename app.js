@@ -5,7 +5,7 @@ const logger = require('morgan');
 const app = express();
 const indexRouter = require('./routes/index');
 
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
-app.use(express.static(path.join(__dirname, './public')));
-app.use(express.static(path.join(__dirname, './node_modules/bootstrap/dist')));
-app.use(express.static(path.join(__dirname, './node_modules/jquery/dist')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+app.use(express.static(path.join(__dirname, 'node_modules/jquery/dist')));
 app.use('/', indexRouter);
 
 app.use((req, res, next) => {
