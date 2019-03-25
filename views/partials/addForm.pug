@@ -1,7 +1,7 @@
 extends ../layout
 
 block favicon
-    link(rel="shortcut icon", href="images/add.png", type="image/png")
+    link(rel="shortcut icon", href="/images/add.png", type="image/png")
 
 block title
     title Add new task
@@ -9,7 +9,7 @@ block title
 block content
     .container
         div(class="m-3 justify-content-center d-flex")
-            img(src="images/add.svg", class="mr-2 align-top", height="48", width="48", alt="Add image")
+            img(src="/images/add.svg", class="mr-2 align-top", height="48", width="48", alt="Add image")
             h2 Add new task
         form(class="m-3 px-3 pt-3 border grey", style="border-radius: 1rem", method="post", action="/add")
             div(class="form-group")
