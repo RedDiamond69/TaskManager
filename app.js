@@ -5,6 +5,9 @@ const logger = require('morgan');
 const app = express();
 const indexRouter = require('./routes/index');
 
+const databaseUtils = require('./Utils/databaseUtils');
+databaseUtils.setConnection();
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -37,3 +40,5 @@ app.use((err, req, res, next) => {
 app.listen(3000, () => {
     console.log('Server start listening on port number 3000.');
 });
+
+module.exports = app;
